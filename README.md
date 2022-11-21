@@ -1,3 +1,12 @@
+Modified for following enviroments.
+- Python 3.10
+- pyglet 2.0.0
+- pymunk 6.4.0
+- vispy 0.12.1
+- Pillow 9.3.0
+
+---
+
 # 作って動かす ALife - 実装を通した人工生命モデル入門
 
 本リポジトリはオライリー・ジャパン発行書籍『[作って動かす ALife](https://www.oreilly.co.jp/books/9784873118475/)』のサポートサイトです。

@@ -29,4 +29,4 @@ def update(frame):
     return
 
 anim = animation.FuncAnimation(fig, update, interval = 20, blit=False)
-plt.show(anim)
+plt.show()

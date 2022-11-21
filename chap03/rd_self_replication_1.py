@@ -47,9 +47,9 @@ while visualizer:
         laplacian_a = (np.roll(a, 1, axis=0) + np.roll(a, -1, axis=0) + np.roll(a, 1, axis=1) + np.roll(a, -1, axis=1) - 4*a) / (dx*dx)
         laplacian_b = (np.roll(b, 1, axis=0) + np.roll(b, -1, axis=0) + np.roll(b, 1, axis=1) + np.roll(b, -1, axis=1) - 4*b) / (dx*dx)
         # アップデート
-        dadt = Da * laplacian_a - np.exp(-w*p)*a*b*b + r*(1.0-a);
-        dbdt = Db * laplacian_b + np.exp(-w*p)*a*b*b - k*b;
-        dpdt = k*b - k_p*p;
+        dadt = Da * laplacian_a - np.exp(-w*p)*a*b*b + r*(1.0-a)
+        dbdt = Db * laplacian_b + np.exp(-w*p)*a*b*b - k*b
+        dpdt = k*b - k_p*p
         a += dt * dadt
         b += dt * dbdt
         p += dt * dpdt
